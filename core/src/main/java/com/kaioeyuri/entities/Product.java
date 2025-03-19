@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.Currency;
 
 @Getter
 @Setter
@@ -16,6 +15,6 @@ public class Product {
     private String name;
     private BigDecimal commercialQuantity;
     private CommercialUnit commercialUnity;
-    private Currency unitaryCost;
-    private Currency tributaryUnitaryCost;
+    private BigDecimal unitaryCost;
+    private BigDecimal tributaryUnitaryCost;
 }

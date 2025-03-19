@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.Date;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
 public class BrazilianInvoice {
     private String nfNumber;
     private String accessKey;
-    private Currency totalCost;
+    private BigDecimal totalCost;
     private NationalRegister buyerRegister;
     private Date issuedAt;
     private Issuer issuer;
