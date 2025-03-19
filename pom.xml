@@ -21,6 +21,10 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>nfParser</module>
+		<module>core</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>
@@ -78,6 +82,18 @@
 			<groupId>stax</groupId>
 			<artifactId>stax</artifactId>
 			<version>1.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.kaioeyuri</groupId>
+			<artifactId>core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.kaioeyuri</groupId>
+			<artifactId>nfParser</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
