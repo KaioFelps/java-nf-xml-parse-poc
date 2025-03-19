@@ -25,6 +25,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+            <version>5.11.4</version>
+        </dependency>
+        <dependency>
             <groupId>com.kaioeyuri</groupId>
             <artifactId>core</artifactId>
             <version>0.0.1-SNAPSHOT</version>

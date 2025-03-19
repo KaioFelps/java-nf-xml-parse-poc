@@ -1,4 +1,4 @@
-package com.kaioeyuri.enums;
+package com.kaioeyuri.core.enums;
 
 public enum NationalRegisterType {
     CNPJ,

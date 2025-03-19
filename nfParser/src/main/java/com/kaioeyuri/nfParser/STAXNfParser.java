@@ -1,12 +1,12 @@
 package com.kaioeyuri.nfParser;
 
-import com.kaioeyuri.entities.BrazilianInvoice;
-import com.kaioeyuri.entities.Issuer;
-import com.kaioeyuri.entities.Product;
-import com.kaioeyuri.enums.CommercialUnit;
-import com.kaioeyuri.enums.NationalRegisterType;
+import com.kaioeyuri.core.entities.BrazilianInvoice;
+import com.kaioeyuri.core.entities.Issuer;
+import com.kaioeyuri.core.entities.Product;
+import com.kaioeyuri.core.enums.CommercialUnit;
+import com.kaioeyuri.core.enums.NationalRegisterType;
 import com.kaioeyuri.nfParser.exceptions.MalformedXMLException;
-import com.kaioeyuri.valueObjects.NationalRegister;
+import com.kaioeyuri.core.valueObjects.NationalRegister;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;

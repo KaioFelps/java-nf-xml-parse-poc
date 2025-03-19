@@ -1,6 +1,6 @@
-package com.kaioeyuri.valueObjects;
+package com.kaioeyuri.core.valueObjects;
 
-import com.kaioeyuri.enums.NationalRegisterType;
+import com.kaioeyuri.core.enums.NationalRegisterType;
 
 import java.util.Optional;
 

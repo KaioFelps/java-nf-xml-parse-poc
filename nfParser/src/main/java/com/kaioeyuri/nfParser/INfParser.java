@@ -1,6 +1,6 @@
 package com.kaioeyuri.nfParser;
 
-import com.kaioeyuri.entities.BrazilianInvoice;
+import com.kaioeyuri.core.entities.BrazilianInvoice;
 import com.kaioeyuri.nfParser.exceptions.MalformedXMLException;
 
 import java.io.Reader;

@@ -1,6 +1,6 @@
-package com.kaioeyuri.entities;
+package com.kaioeyuri.core.entities;
 
-import com.kaioeyuri.enums.CommercialUnit;
+import com.kaioeyuri.core.enums.CommercialUnit;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
