@@ -13,7 +13,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class BrazilianInvoice {
-    private String nfNumber;
+    private Integer nfNumber;
     private String accessKey;
     private BigDecimal totalCost;
     private NationalRegister buyerRegister;
