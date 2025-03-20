@@ -1,6 +1,6 @@
 package com.kaioeyuri.core.entities;
 
-import com.kaioeyuri.core.enums.CommercialUnit;
+import com.kaioeyuri.core.enums.CommercialUnity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,7 +14,7 @@ public class Product {
     private String code;
     private String name;
     private BigDecimal commercialQuantity;
-    private CommercialUnit commercialUnity;
+    private CommercialUnity commercialUnity;
     private BigDecimal unitaryCost;
     private BigDecimal tributaryUnitaryCost;
 }
