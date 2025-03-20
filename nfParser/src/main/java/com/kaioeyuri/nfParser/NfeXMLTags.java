@@ -11,6 +11,12 @@ public final class NfeXMLTags {
     public static final String productTag = "det";
     public static final String productInnerTag = "prod";
 
+    public static final String issuerTradingNameTag = "xFant";
+    public static final String cpfTag = "CPF";
+    public static final String cnpjTag = "CNPJ";
+
+    public static final String nfValueTag = "vNF";
+
     public static final String productCodeTag = "cProd";
     public static final String productNameTag = "xProd";
     public static final String productCommercialQuantityTag = "qCom";
