@@ -1,6 +1,9 @@
 package com.kaioeyuri.core.enums;
 
-public enum CommercialUnit {
+import java.util.HashMap;
+import java.util.Map;
+
+public enum CommercialUnity {
     AMPOLA("AMPOLA"),
     BALDE("BALDE"),
     BANDEJ("BANDEJA"),
@@ -10,7 +13,7 @@ public enum CommercialUnit {
     BOBINA("BOBINA"),
     BOMBEAR("BOMBONA"),
     CÁPSULAS("CÁPSULA"),
-    CARRINHO("CARTELA"),
+    CART("CARTELA"),
     CENTO("CENTO"),
     CJ("CONJUNTO"),
     CM("CENTÍMETRO"),
@@ -25,7 +28,7 @@ public enum CommercialUnit {
     CX25("CAIXA COM 25 UNIDADES"),
     CX50("CAIXA COM 50 UNIDADES"),
     CX100("CAIXA COM 100 UNIDADES"),
-    DISP("EXIBIÇÃO"),
+    DISP("DISPLAY"),
     DUZIA("DUZIA"),
     EMBAL("EMBALAGEM"),
     FARDO("FARDO"),
@@ -62,11 +65,43 @@ public enum CommercialUnit {
     UNID("UNIDADE"),
     VASIL("VASILHAME"),
     VIDRO("VIDRO"),
-    LT("LITROS");
+    GS("GROSA"),
+    PA("PAR");
 
     public final String label;
 
-    private CommercialUnit(String label) {
+    public static final Map<String, CommercialUnity> ALIASES = new HashMap<>();
+
+    static {
+        for (CommercialUnity unity : values()) {
+            ALIASES.put(unity.toString(), unity);
+        }
+        // add custom aliases
+        ALIASES.put("LT", CommercialUnity.LITRO);
+        ALIASES.put("PR", CommercialUnity.PA);
+        ALIASES.put("RL", CommercialUnity.ROLO);
+        ALIASES.put("UN", CommercialUnity.UNID);
+        ALIASES.put("CT", CommercialUnity.CART);
+        ALIASES.put("DZ", CommercialUnity.DUZIA);
+        ALIASES.put("PT", CommercialUnity.PACOTE);
+        ALIASES.put("PACK", CommercialUnity.PACOTE);
+    };
+
+    public static CommercialUnity fromString(String value) {
+        CommercialUnity unity = CommercialUnity.ALIASES.get(value.toUpperCase());
+
+        if (unity == null) {
+            throw new IllegalArgumentException("Received invalid Commercial Unity: " + value);
+        }
+
+        return unity;
+    }
+
+    private CommercialUnity(String label) {
         this.label = label;
+    }
+
+    public String getLabel() {
+        return this.label;
     }
 }
